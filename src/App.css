@@ -1,0 +1,146 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+html{
+  height: 100%;
+  margin: 0px;
+  padding: 0px;
+}
+
+body, html, * {
+  margin: 0;
+  padding: 0;
+}
+body {
+  overflow-x: hidden;
+}
+
+@keyframes fadeInTopToBottom {
+  from {
+      opacity: 0;
+      transform: translateY(-50px);
+  }
+  to {
+      opacity: 1;
+      transform: translateY(0);
+  }
+}
+
+
+.service {
+  height: 40vh;
+  background-position: center;
+}
+
+/* Small screens */
+@media (min-width: 640px) {
+  .service {
+    height: 50vh;
+    background-position: center;
+  }
+}
+
+/* Medium screens */
+@media (min-width: 768px) {
+  .service {
+    height: 60vh;
+    background-position: center top;
+    background-size: auto;
+  }
+}
+
+/* Large screens */
+@media (min-width: 1024px) {
+  .service {
+    height: 40vh;
+    width: 100%;
+    background-position: top;
+    background-size: stretch;
+  }
+}
+
+/* Extra-large screens */
+@media (min-width: 128px) {
+  .service {
+    height: 40vh;
+    width: 100%;
+    background-position: top;
+    background-size: stretch;
+  }
+}
+@media (min-width: 1440px) {
+  .service {
+    height: 40vh;
+    width: 100%;
+    background-position: top;
+    background-size: stretch;
+  }
+}
+
+.arrow {
+  position: absolute;
+  height: 200px;
+  right: 970px;
+  width: 2px; /* Width of the line */
+  background-color: #BBD979; /* Color of the line */
+  transition: height 0.3s; /* Smooth transition for height change */
+}
+
+.arrow::after {
+  /* Arrowhead using a triangle */
+  content: '';
+  position: absolute;
+  left: 50%;
+  bottom: 0px;
+  width: 0;
+  height: 0px;
+  border-left: 10px solid transparent;  /* Arrowhead size */
+  border-right: 10px solid transparent; /* Arrowhead size */
+  border-top: 20px solid #BBD979;          /* Arrowhead color */
+  transform: translateX(-50%);
+}
+
+nav {
+  transition: transform 0.3s ease-out;
+}
+
+input:focus {
+  outline: none !important;
+  border-color: #34d399;  /* Change this to your custom green color if different */
+  box-shadow: 0 0 0 0.2rem rgba(52, 211, 153, 0.25);  /* Change the rgba color to match your custom green if different */
+}
+
+
+
+
+
+
+
+
